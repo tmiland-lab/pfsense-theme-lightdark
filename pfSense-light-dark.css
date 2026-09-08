@@ -120,6 +120,14 @@ input[type="checkbox"]:not(:checked) {
   top: 0;
 }
 
+/* Collapsible panel bodies (dashboard widgets, filter panels) gain
+   overflow-x: auto from pfSense.css when open - another sticky containing
+   block that would displace headers at rest. Neutralize inside them. */
+.panel-body.collapse .table>thead>tr>th,
+.panel-body.collapse.in .table>thead>tr>th {
+  top: 0;
+}
+
 /* Monospace stack for code/log output, matching the system-font body */
 pre, code, kbd, samp {
   font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Consolas, "Liberation Mono", Menlo, monospace;
