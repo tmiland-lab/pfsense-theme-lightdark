@@ -26,7 +26,8 @@ patches the login page, which pfSense always renders in light mode.
   patched `login.css` with a matching `prefers-color-scheme: dark` block.
 - **Usability tweaks** (both schemes):
   - sticky table headers — column titles stay visible while scrolling long
-    tables (firewall rules, logs, status pages)
+    unwrapped tables (headers yield to `.table-responsive` wrappers, where
+    sticking against the page would be broken/incorrect anyway)
   - monospace stack for `pre` / `code` / `kbd` / `samp`
   - the light/dark system switch itself, plus the denser table/menu spacing
     carried over from the upstream experimental stylesheets

@@ -113,6 +113,13 @@ input[type="checkbox"]:not(:checked) {
   position: static;
 }
 
+/* pfSense wraps most tables in .table-responsive (overflow-x: auto),
+   which becomes the sticky containing block; top: 50px would push
+   headers 50px into the table at rest. Neutralize inside the wrapper. */
+.table-responsive .table>thead>tr>th {
+  top: 0;
+}
+
 /* Monospace stack for code/log output, matching the system-font body */
 pre, code, kbd, samp {
   font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Consolas, "Liberation Mono", Menlo, monospace;

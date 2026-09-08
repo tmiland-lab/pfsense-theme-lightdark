@@ -23,7 +23,7 @@ install -m 0644 "$REPO/pfSense-light-dark.css" "$STAGE/usr/local/www/css/pfSense
 install -m 0644 "$PKGDIR/files/usr-local-share-pfsense_theme_lightdark/login.css" "$STAGE/$SBASE/login.css"
 install -m 0644 "$PKGDIR/files/usr-local-share-pfsense_theme_lightdark/login.css.stock" "$STAGE/$SBASE/login.css.stock"
 
-VERSION="0.2.0"
+VERSION="0.2.1"
 ABI=$(pkg config abi)
 NAME="pfSense-theme-lightdark"
 ORIGIN="www/pfSense-theme-lightdark"
