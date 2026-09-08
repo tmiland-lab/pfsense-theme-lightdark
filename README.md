@@ -24,6 +24,12 @@ patches the login page, which pfSense always renders in light mode.
 - **Dark login page** — the login page (`/etc/inc/authgui.inc`) hardcodes
   `login.css` and never loads the per-user theme. The package installs a
   patched `login.css` with a matching `prefers-color-scheme: dark` block.
+- **Usability tweaks** (both schemes):
+  - sticky table headers — column titles stay visible while scrolling long
+    tables (firewall rules, logs, status pages)
+  - monospace stack for `pre` / `code` / `kbd` / `samp`
+  - the light/dark system switch itself, plus the denser table/menu spacing
+    carried over from the upstream experimental stylesheets
 
 ## Install
 

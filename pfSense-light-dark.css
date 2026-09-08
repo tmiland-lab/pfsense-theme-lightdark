@@ -97,6 +97,27 @@ input[type="checkbox"]:not(:checked) {
   outline: 1px solid #888888;
 }
 
+/* Sticky table headers: keep column titles visible while scrolling
+   long tables. top: 50px clears the fixed top menu (webguifixedmenu =
+   fixed renders bootstrap navbar-fixed-top). Pages using the static
+   menu get headers sticking 50px down - acceptable trade-off. */
+.table>thead>tr>th {
+  position: sticky;
+  top: 50px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+/* Sticky headers make no sense inside modal scroll containers */
+.modal .table>thead>tr>th {
+  position: static;
+}
+
+/* Monospace stack for code/log output, matching the system-font body */
+pre, code, kbd, samp {
+  font-family: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
 /*** Dark-mode fixes (gaps in upstream pfSense-dark.css) ***/
 @media (prefers-color-scheme: dark) {
   /* Make native widgets (select dropdowns, scrollbars, checkboxes)
@@ -128,5 +149,21 @@ input[type="checkbox"]:not(:checked) {
 
   pre, kbd {
     border-color: #303030;
+  }
+
+  /* Sticky header surfaces in dark mode */
+  .table>thead>tr>th {
+    background-color: #212121;
+  }
+
+  /* Keep upstream dark parity: .table-striped>thead is #000 */
+  .table-striped>thead>tr>th {
+    background-color: #000;
+  }
+
+  /* Vendor sortable css paints sorted columns white (light value);
+     keep them dark */
+  table[data-sortable].sortable-theme-bootstrap th[data-sorted="true"] {
+    background-color: #212121;
   }
 }
