@@ -7,6 +7,13 @@ patches the login page, which pfSense always renders in light mode.
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 ![pfSense](https://img.shields.io/badge/pfSense-2.8.x-B71C1C)
 
+| Light | Dark |
+| --- | --- |
+| ![Light mode](docs/screenshots/light.png) | ![Dark mode](docs/screenshots/dark.png) |
+
+*Same theme, no settings touched — it follows the `prefers-color-scheme` of
+the machine you browse from.*
+
 ## What it does
 
 - **`pfSense-light-dark.css`** — a theme you select per user under
