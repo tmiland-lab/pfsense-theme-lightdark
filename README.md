@@ -40,7 +40,7 @@ only lists the official repo):
 ```sh
 cat > /usr/local/etc/pkg/repos/pfsense-theme-lightdark.conf <<'EOF'
 pfsense-theme-lightdark: {
-    url: "https://tmiland-labs.github.io/pfsense-theme-lightdark/repo",
+    url: "https://tmiland-lab.github.io/pfsense-theme-lightdark/repo",
     mirror_type: "NONE",
     signature_type: "none",
     enabled: yes

@@ -23,7 +23,7 @@ install -m 0644 "$REPO/pfSense-light-dark.css" "$STAGE/usr/local/www/css/pfSense
 install -m 0644 "$PKGDIR/files/usr-local-share-pfsense_theme_lightdark/login.css" "$STAGE/$SBASE/login.css"
 install -m 0644 "$PKGDIR/files/usr-local-share-pfsense_theme_lightdark/login.css.stock" "$STAGE/$SBASE/login.css.stock"
 
-VERSION="0.2.2"
+VERSION="0.2.3"
 ABI=$(pkg config abi)
 NAME="pfSense-theme-lightdark"
 ORIGIN="www/pfSense-theme-lightdark"
@@ -80,7 +80,7 @@ $manifest = array(
     "comment" => "Light/dark system-switching theme for pfSense",
     "desc" => "Adds pfSense-light-dark.css (light theme + pfSense-dark.css behind prefers-color-scheme: dark, with dark-mode fixes) and applies dark mode to the login page.",
     "maintainer" => "kontakt@tmiland.com",
-    "www" => "https://github.com/tmiland-labs/pfsense-theme-lightdark",
+    "www" => "https://github.com/tmiland-lab/pfsense-theme-lightdark",
     "abi" => $abi,
     "arch" => $abi,
     "prefix" => "/",
