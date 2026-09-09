@@ -102,3 +102,9 @@ Output: `/tmp/pfsense-theme-lightdark-repo-out/`. The pkg is published to the
 
 Apache-2.0 — see [LICENSE](LICENSE). Derived from pfSense's Apache-2.0
 stylesheets.
+
+---
+
+Built with [opencode](https://opencode.ai/go?ref=00KNXXSB00) — the open-source
+AI coding agent for the terminal. Grab your own at
+[opencode.ai/go](https://opencode.ai/go?ref=00KNXXSB00).
