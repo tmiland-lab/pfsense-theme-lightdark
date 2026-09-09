@@ -14,6 +14,8 @@ patches the login page, which pfSense always renders in light mode.
 *Same theme, no settings touched — it follows the `prefers-color-scheme` of
 the machine you browse from.*
 
+
+**Full write-up on the blog:** https://tmiland.com/pfsense-theme-lightdark/
 ## What it does
 
 - **`pfSense-light-dark.css`** — a theme you select per user under
